@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo_box">
+        <img src="image/safe.png" alt="Logo" class="logo" />
+      </div>
+      <div class="textbox">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Your Safety, Our Priority</span>
+          <span class="heading-primary-sub">Uniting for a Safer Community</span>
+        </h1>
+
+        <button class="btn"><a href="#incident">Report an Incident</a></button>
+      </div>
+    </header>
+
+    <section>
+      <h2>HOME</h2>
+      <form action="">
+        <label for="">Date</label>
+        <input
+          type="datetime-local"
+          id="date/time"
+          name="date/time"
+          placeholder="date/time"
+        />
+        <br />
+
+        <p>Safety status: The user is safe</p>
+        <input type="radio" name="" id="yes" />
+        <label for="">Yes</label>
+
+        <input type="radio" name="" id="No" />
+        <label for="">No</label>
+        <br />
+
+        <label for="">If no, explain the situation</label>
+        <textarea name="message" id="event">explain the situation</textarea>
+
+        <br />
+      </form>
+    </section>
+
+
+    <section id="incident">
+      <h2>REPORT AN INCIDENT</h2>
+
+      <form action="" onsubmit="event.preventDefault(); codeAddress();">
+        <label for="incident">Type of incident</label>
+        <select name="" id="incident">
+          <option value="suspicious activity">Suspicious activit</option>
+          <option value="fire">Fire</option>
+          <option value="Medical Emergency">Medical Emergency</option>
+          <option value="theft">Theft</option>
+          <option value="others">Others</option>
+        </select>
+        <br />
+
+        <label for="">Event</label>
+        <div>
+          <input
+            type="text"
+            id="voiceInput"
+            placeholder="what's happening near you"
+          />
+          <img
+            src="image/microphone.png"
+            alt="Start Recording"
+            style="cursor: pointer; width: 30px"
+            onclick="startVoiceInput()"
+          />
+        </div>
+        <br />
+
+        <label for="file">Upload an image</label>
+        <div>
+          <input type="file" name="" placeholder="file" id="file" />
+
+          <!-- Image button -->
+          <img
+            src="image/camera.jpg"
+            alt="Capture Image"
+            style="cursor: pointer; width: 30px"
+            onclick="startCamera()"
+          />
+
+          <!-- Video element to show camera preview -->
+          <video id="cameraPreview" autoplay style="display: none"></video>
+
+          <!-- Canvas to capture the image -->
+          <canvas id="capturedImage" style="display: none"></canvas>
+        </div>
+        <br />
+
+        <a href="tel:+234 703 677 2284" class="quick-dial">Call Emergency</a>
+        <br />
+
+        <label for="address">Incident location:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="e.g., Ziks Avenue,Awka"
+          required
+        />
+        <button type="submit">Search</button>
+
+        <div
+          id="map"
+          style="width: 100%; height: 500px; margin-top: 20px"
+        ></div>
+      </form>
+    </section>
+    <section>
+      <h2>SAFETY TIPS</h2>
+    </section>
+
+    <section>
+      <h2>COMMUNITY FORUM PAGE</h2>
+    </section>
+    <section>
+      <h2>EMERGENCY CONTACT PAGE</h2>
+    </section>
+
+    <footer class="footer">nav</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

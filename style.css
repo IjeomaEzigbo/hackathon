@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1.7;
+    color: rgb(184, 182, 182);
+    padding: 30px;
+ }
+
+ 
+.header, .footer {
+    position: relative;
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+     rgba(7, 7, 7,0.7),
+      rgba(5, 5, 5, 0.7)
+    ),
+    url(image/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.logo_box{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+
+}
+
+.logo{
+height:50px;
+}
+
+
+.textbox{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary{
+color:yellow;
+
+text-align: center;
+padding: 0;
+line-height: 1.5;}
+
+
+.heading-primary-main{
+display: block;
+font-size: 150%;
+font-weight: 600;
+letter-spacing: 20px;
+text-transform: uppercase;
+}
+
+.heading-primary-sub{
+display: block;
+font-size: 70%;
+font-weight: 300;
+letter-spacing: 15px;
+text-transform: capitalize;
+}
+
+.btn {
+  padding: 3%;
+  background-color: rgb(44, 184, 98);
+  color: white;
+  font-size: 120%;
+  border: none;
+border-radius: 8px;
+  width: 50%;
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+section{
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(7, 7, 7,0.7),
+        rgba(5, 5, 5, 0.7)
+      ),
+      url(image/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    color: yellow;
+    padding: 5%;
+    font-size: 180%;
+    font-weight: 400;
+}
+
+input {
+  width: 50%;
+  height: 25px;
+  display: inline-block;
+  margin: 0;
+  padding: 1.5% ;
+  border: 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+div{margin: 0;}
